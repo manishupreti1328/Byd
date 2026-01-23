@@ -4,6 +4,9 @@ import { fetchGraphQL } from "@/lib/graphql";
 import { GET_COMPARISONS, GET_ALL_COMPARISONS } from "@/lib/comparisons-queries";
 import type { Metadata } from 'next';
 
+// ISR 
+export const revalidate = 120;
+
 type ComparisonNode = {
   id: string;
   slug: string;

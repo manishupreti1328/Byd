@@ -5,7 +5,9 @@ import TableOfContents from "@/components/TableOfContents";
 import { processContent } from "@/lib/toc-utils";
 import type { Metadata } from 'next';
 
-export const dynamic = 'force-dynamic';
+
+// ISR 
+export const revalidate = 120;
 
 type Props = {
   params: Promise<{ country: string; slug: string }>;

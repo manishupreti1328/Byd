@@ -3,7 +3,9 @@ import { fetchGraphQL } from "@/lib/graphql";
 import { GET_COUNTRIES } from "@/lib/queries";
 import type { Metadata } from 'next';
 
-export const dynamic = 'force-dynamic';
+
+// ISR 
+export const revalidate = 120;
 
 type CountryNode = {
   id: string;

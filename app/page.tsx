@@ -5,6 +5,10 @@ import { GET_MODELS_WITH_PAGINATION, GET_COUNTRIES } from "@/lib/queries";
 import { GET_COMPARISONS_WITH_PAGINATION } from "@/lib/comparisons-queries";
 import type { Metadata } from 'next';
 
+
+// ISR 
+export const revalidate = 120;
+
 export const metadata: Metadata = {
   title: "BYD Car Updates | The Ultimate Source for BYD EVs",
   description: "Your #1 source for the latest BYD electric vehicle news, comprehensive model reviews, detailed comparisons, and specifications.",

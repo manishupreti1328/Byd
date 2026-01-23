@@ -5,6 +5,9 @@ import { generateHreflangForComparison } from "@/lib/comparisons-utils";
 import { processContent } from "@/lib/toc-utils";
 import TableOfContents from "@/components/TableOfContents";
 
+// ISR 
+export const revalidate = 120;
+
 // Calculate read time for better UX
 function calculateReadTime(content: string): number {
   if (!content) return 3;

@@ -9,6 +9,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { InfoIcon, CalculatorIcon, BatteryIcon, ZapIcon, CheckCircleIcon, HelpCircleIcon, DollarSignIcon, ClockIcon, CarIcon, ShieldCheckIcon } from "lucide-react";
 
+// ISR 
+export const revalidate = 120;
+
 export const metadata: Metadata = {
   title: "Free EV Charging Cost Calculator 2024 - Calculate BYD, Tesla, MG, Hyundai Electric Car Charging Costs",
   description: "Accurate EV charging cost calculator. Instantly calculate charging time, energy cost, and cost per km for BYD Atto 3, Dolphin, Seal, Tesla, MG, Hyundai & all EVs worldwide. Supports home charging & fast charging.",
