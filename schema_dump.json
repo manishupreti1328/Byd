@@ -1,0 +1,1835 @@
+{
+  "modelType": {
+    "name": "Model",
+    "fields": [
+      {
+        "name": "author",
+        "type": {
+          "name": "NodeWithAuthorToUserConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "authorDatabaseId",
+        "type": {
+          "name": "Int",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "authorId",
+        "type": {
+          "name": "ID",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "content",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "contentType",
+        "type": {
+          "name": "ContentNodeToContentTypeConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "contentTypeName",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "databaseId",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "date",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "dateGmt",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "desiredSlug",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "editingLockedBy",
+        "type": {
+          "name": "ContentNodeToEditLockConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "enclosure",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "enqueuedScripts",
+        "type": {
+          "name": "ContentNodeToEnqueuedScriptConnection",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "enqueuedStylesheets",
+        "type": {
+          "name": "ContentNodeToEnqueuedStylesheetConnection",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "excerpt",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "featuredImage",
+        "type": {
+          "name": "NodeWithFeaturedImageToMediaItemConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "featuredImageDatabaseId",
+        "type": {
+          "name": "Int",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "featuredImageId",
+        "type": {
+          "name": "ID",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "guid",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "hasPassword",
+        "type": {
+          "name": "Boolean",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "id",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "isComment",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "isContentNode",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "isFrontPage",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "isPostsPage",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "isPreview",
+        "type": {
+          "name": "Boolean",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "isRestricted",
+        "type": {
+          "name": "Boolean",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "isTermNode",
+        "type": {
+          "name": null,
+          "kind": "NON_NULL"
+        }
+      },
+      {
+        "name": "lastEditedBy",
+        "type": {
+          "name": "ContentNodeToEditLastConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "link",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "modified",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "modifiedGmt",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "password",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "preview",
+        "type": {
+          "name": "ModelToPreviewConnectionEdge",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "previewRevisionDatabaseId",
+        "type": {
+          "name": "Int",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "previewRevisionId",
+        "type": {
+          "name": "ID",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "seo",
+        "type": {
+          "name": "Seo",
+          "kind": "OBJECT"
+        }
+      },
+      {
+        "name": "slug",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "status",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "template",
+        "type": {
+          "name": "ContentTemplate",
+          "kind": "INTERFACE"
+        }
+      },
+      {
+        "name": "title",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      },
+      {
+        "name": "uri",
+        "type": {
+          "name": "String",
+          "kind": "SCALAR"
+        }
+      }
+    ]
+  },
+  "allTypes": {
+    "types": [
+      {
+        "name": "String"
+      },
+      {
+        "name": "Int"
+      },
+      {
+        "name": "Boolean"
+      },
+      {
+        "name": "RootQuery"
+      },
+      {
+        "name": "Settings"
+      },
+      {
+        "name": "RootQueryToCategoryConnectionWhereArgs"
+      },
+      {
+        "name": "OrderEnum"
+      },
+      {
+        "name": "TermObjectsConnectionOrderbyEnum"
+      },
+      {
+        "name": "RootQueryToCategoryConnection"
+      },
+      {
+        "name": "CategoryConnection"
+      },
+      {
+        "name": "PageInfo"
+      },
+      {
+        "name": "CategoryConnectionEdge"
+      },
+      {
+        "name": "Category"
+      },
+      {
+        "name": "TermNode"
+      },
+      {
+        "name": "TermNodeToEnqueuedScriptConnection"
+      },
+      {
+        "name": "EnqueuedScriptConnectionEdge"
+      },
+      {
+        "name": "EnqueuedScript"
+      },
+      {
+        "name": "EnqueuedAsset"
+      },
+      {
+        "name": "ScriptLoadingGroupLocationEnum"
+      },
+      {
+        "name": "ScriptLoadingStrategyEnum"
+      },
+      {
+        "name": "EnqueuedScriptConnectionPageInfo"
+      },
+      {
+        "name": "WPPageInfo"
+      },
+      {
+        "name": "TermNodeToEnqueuedScriptConnectionEdge"
+      },
+      {
+        "name": "TermNodeToEnqueuedScriptConnectionPageInfo"
+      },
+      {
+        "name": "TermNodeToEnqueuedStylesheetConnection"
+      },
+      {
+        "name": "EnqueuedStylesheetConnectionEdge"
+      },
+      {
+        "name": "EnqueuedStylesheet"
+      },
+      {
+        "name": "EnqueuedStylesheetConnectionPageInfo"
+      },
+      {
+        "name": "TermNodeToEnqueuedStylesheetConnectionEdge"
+      },
+      {
+        "name": "TermNodeToEnqueuedStylesheetConnectionPageInfo"
+      },
+      {
+        "name": "HierarchicalTermNode"
+      },
+      {
+        "name": "HierarchicalNode"
+      },
+      {
+        "name": "CategoryToAncestorsCategoryConnection"
+      },
+      {
+        "name": "CategoryToAncestorsCategoryConnectionEdge"
+      },
+      {
+        "name": "CategoryToAncestorsCategoryConnectionPageInfo"
+      },
+      {
+        "name": "CategoryConnectionPageInfo"
+      },
+      {
+        "name": "CategoryToCategoryConnectionWhereArgs"
+      },
+      {
+        "name": "CategoryToCategoryConnection"
+      },
+      {
+        "name": "CategoryToCategoryConnectionEdge"
+      },
+      {
+        "name": "CategoryToCategoryConnectionPageInfo"
+      },
+      {
+        "name": "CategoryToContentNodeConnectionWhereArgs"
+      },
+      {
+        "name": "ContentTypesOfCategoryEnum"
+      },
+      {
+        "name": "DateQueryInput"
+      },
+      {
+        "name": "DateInput"
+      },
+      {
+        "name": "PostObjectsConnectionDateColumnEnum"
+      },
+      {
+        "name": "RelationEnum"
+      },
+      {
+        "name": "MimeTypeEnum"
+      },
+      {
+        "name": "PostObjectsConnectionOrderbyInput"
+      },
+      {
+        "name": "PostObjectsConnectionOrderbyEnum"
+      },
+      {
+        "name": "PostStatusEnum"
+      },
+      {
+        "name": "CategoryToContentNodeConnection"
+      },
+      {
+        "name": "ContentNodeConnection"
+      },
+      {
+        "name": "ContentNodeConnectionEdge"
+      },
+      {
+        "name": "ContentType"
+      },
+      {
+        "name": "ContentTypeToTaxonomyConnection"
+      },
+      {
+        "name": "TaxonomyConnection"
+      },
+      {
+        "name": "TaxonomyConnectionEdge"
+      },
+      {
+        "name": "Taxonomy"
+      },
+      {
+        "name": "TaxonomyToContentTypeConnection"
+      },
+      {
+        "name": "ContentTypeConnection"
+      },
+      {
+        "name": "ContentTypeConnectionPageInfo"
+      },
+      {
+        "name": "TaxonomyToContentTypeConnectionEdge"
+      },
+      {
+        "name": "TaxonomyToContentTypeConnectionPageInfo"
+      },
+      {
+        "name": "TaxonomyToTermNodeConnection"
+      },
+      {
+        "name": "TermNodeConnection"
+      },
+      {
+        "name": "TermNodeConnectionEdge"
+      },
+      {
+        "name": "TermNodeConnectionPageInfo"
+      },
+      {
+        "name": "TaxonomyToTermNodeConnectionEdge"
+      },
+      {
+        "name": "TaxonomyToTermNodeConnectionPageInfo"
+      },
+      {
+        "name": "TaxonomyConnectionPageInfo"
+      },
+      {
+        "name": "ContentTypeToTaxonomyConnectionEdge"
+      },
+      {
+        "name": "ContentTypeToTaxonomyConnectionPageInfo"
+      },
+      {
+        "name": "ContentTypeToContentNodeConnectionWhereArgs"
+      },
+      {
+        "name": "ContentTypeEnum"
+      },
+      {
+        "name": "ContentTypeToContentNodeConnection"
+      },
+      {
+        "name": "ContentTypeToContentNodeConnectionEdge"
+      },
+      {
+        "name": "ContentTypeToContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "ContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "PostTypeLabelDetails"
+      },
+      {
+        "name": "User"
+      },
+      {
+        "name": "Commenter"
+      },
+      {
+        "name": "Avatar"
+      },
+      {
+        "name": "AvatarRatingEnum"
+      },
+      {
+        "name": "UserToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "CommentsConnectionOrderbyEnum"
+      },
+      {
+        "name": "CommentStatusEnum"
+      },
+      {
+        "name": "UserToCommentConnection"
+      },
+      {
+        "name": "CommentConnection"
+      },
+      {
+        "name": "CommentConnectionEdge"
+      },
+      {
+        "name": "Comment"
+      },
+      {
+        "name": "CommentToCommenterConnectionEdge"
+      },
+      {
+        "name": "CommenterConnectionEdge"
+      },
+      {
+        "name": "CommentToContentNodeConnectionEdge"
+      },
+      {
+        "name": "CommentToParentCommentConnectionWhereArgs"
+      },
+      {
+        "name": "CommentToParentCommentConnectionEdge"
+      },
+      {
+        "name": "CommentToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "CommentToCommentConnection"
+      },
+      {
+        "name": "CommentToCommentConnectionEdge"
+      },
+      {
+        "name": "CommentToCommentConnectionPageInfo"
+      },
+      {
+        "name": "CommentConnectionPageInfo"
+      },
+      {
+        "name": "UserToCommentConnectionEdge"
+      },
+      {
+        "name": "UserToCommentConnectionPageInfo"
+      },
+      {
+        "name": "UserToEnqueuedScriptConnection"
+      },
+      {
+        "name": "UserToEnqueuedScriptConnectionEdge"
+      },
+      {
+        "name": "UserToEnqueuedScriptConnectionPageInfo"
+      },
+      {
+        "name": "UserToEnqueuedStylesheetConnection"
+      },
+      {
+        "name": "UserToEnqueuedStylesheetConnectionEdge"
+      },
+      {
+        "name": "UserToEnqueuedStylesheetConnectionPageInfo"
+      },
+      {
+        "name": "UserToMediaItemConnectionWhereArgs"
+      },
+      {
+        "name": "UserToMediaItemConnection"
+      },
+      {
+        "name": "MediaItemConnection"
+      },
+      {
+        "name": "MediaItem"
+      },
+      {
+        "name": "NodeWithComments"
+      },
+      {
+        "name": "HierarchicalContentNode"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeAncestorsConnectionWhereArgs"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeAncestorsConnection"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeAncestorsConnectionEdge"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeAncestorsConnectionPageInfo"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeChildrenConnectionWhereArgs"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeChildrenConnection"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeChildrenConnectionEdge"
+      },
+      {
+        "name": "HierarchicalContentNodeToContentNodeChildrenConnectionPageInfo"
+      },
+      {
+        "name": "ContentNodeToEnqueuedScriptConnectionEdge"
+      },
+      {
+        "name": "ContentNodeToEnqueuedScriptConnectionPageInfo"
+      },
+      {
+        "name": "ContentNodeToEnqueuedStylesheetConnectionEdge"
+      },
+      {
+        "name": "ContentNodeToEnqueuedStylesheetConnectionPageInfo"
+      },
+      {
+        "name": "HierarchicalContentNodeToParentContentNodeConnectionEdge"
+      },
+      {
+        "name": "MediaItemToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "MediaItemToCommentConnection"
+      },
+      {
+        "name": "MediaItemToCommentConnectionEdge"
+      },
+      {
+        "name": "MediaItemToCommentConnectionPageInfo"
+      },
+      {
+        "name": "MediaItemSizeEnum"
+      },
+      {
+        "name": "MediaDetails"
+      },
+      {
+        "name": "MediaItemMeta"
+      },
+      {
+        "name": "Float"
+      },
+      {
+        "name": "MediaSize"
+      },
+      {
+        "name": "MediaItemConnectionPageInfo"
+      },
+      {
+        "name": "UserToMediaItemConnectionEdge"
+      },
+      {
+        "name": "UserToMediaItemConnectionPageInfo"
+      },
+      {
+        "name": "UserToModelConnectionWhereArgs"
+      },
+      {
+        "name": "UserToModelConnection"
+      },
+      {
+        "name": "ModelConnection"
+      },
+      {
+        "name": "AcfMediaItemConnectionEdge"
+      },
+      {
+        "name": "ModelToModelConnection"
+      },
+      {
+        "name": "ModelToModelConnectionEdge"
+      },
+      {
+        "name": "ModelToModelConnectionPageInfo"
+      },
+      {
+        "name": "ModelConnectionPageInfo"
+      },
+      {
+        "name": "ModelToParentConnectionEdge"
+      },
+      {
+        "name": "UserToModelConnectionEdge"
+      },
+      {
+        "name": "UserToModelConnectionPageInfo"
+      },
+      {
+        "name": "UserToPageConnectionWhereArgs"
+      },
+      {
+        "name": "UserToPageConnection"
+      },
+      {
+        "name": "PageConnection"
+      },
+      {
+        "name": "PageConnectionEdge"
+      },
+      {
+        "name": "Page"
+      },
+      {
+        "name": "NodeWithRevisions"
+      },
+      {
+        "name": "NodeWithRevisionsToContentNodeConnectionEdge"
+      },
+      {
+        "name": "NodeWithPageAttributes"
+      },
+      {
+        "name": "PageToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "PageToCommentConnection"
+      },
+      {
+        "name": "PageToCommentConnectionEdge"
+      },
+      {
+        "name": "PageToCommentConnectionPageInfo"
+      },
+      {
+        "name": "PageToPreviewConnectionEdge"
+      },
+      {
+        "name": "PageToRevisionConnectionWhereArgs"
+      },
+      {
+        "name": "PageToRevisionConnection"
+      },
+      {
+        "name": "PageToRevisionConnectionEdge"
+      },
+      {
+        "name": "PageToRevisionConnectionPageInfo"
+      },
+      {
+        "name": "PageConnectionPageInfo"
+      },
+      {
+        "name": "UserToPageConnectionEdge"
+      },
+      {
+        "name": "UserToPageConnectionPageInfo"
+      },
+      {
+        "name": "UserToPostConnectionWhereArgs"
+      },
+      {
+        "name": "UserToPostConnection"
+      },
+      {
+        "name": "PostConnection"
+      },
+      {
+        "name": "PostConnectionEdge"
+      },
+      {
+        "name": "Post"
+      },
+      {
+        "name": "NodeWithTrackbacks"
+      },
+      {
+        "name": "PostToPostConnection"
+      },
+      {
+        "name": "PostToPostConnectionEdge"
+      },
+      {
+        "name": "PostToPostConnectionPageInfo"
+      },
+      {
+        "name": "PostConnectionPageInfo"
+      },
+      {
+        "name": "PostToCategoryConnectionWhereArgs"
+      },
+      {
+        "name": "PostToCategoryConnection"
+      },
+      {
+        "name": "PostToCategoryConnectionEdge"
+      },
+      {
+        "name": "PostToCategoryConnectionPageInfo"
+      },
+      {
+        "name": "PostToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "PostToCommentConnection"
+      },
+      {
+        "name": "PostToCommentConnectionEdge"
+      },
+      {
+        "name": "PostToCommentConnectionPageInfo"
+      },
+      {
+        "name": "PostToParentConnectionEdge"
+      },
+      {
+        "name": "PostToPostFormatConnectionWhereArgs"
+      },
+      {
+        "name": "PostToPostFormatConnection"
+      },
+      {
+        "name": "PostFormatConnection"
+      },
+      {
+        "name": "PostFormatConnectionEdge"
+      },
+      {
+        "name": "PostFormat"
+      },
+      {
+        "name": "PostFormatToContentNodeConnectionWhereArgs"
+      },
+      {
+        "name": "ContentTypesOfPostFormatEnum"
+      },
+      {
+        "name": "PostFormatToContentNodeConnection"
+      },
+      {
+        "name": "PostFormatToContentNodeConnectionEdge"
+      },
+      {
+        "name": "PostFormatToContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "PostFormatToPostConnectionWhereArgs"
+      },
+      {
+        "name": "PostFormatToPostConnection"
+      },
+      {
+        "name": "PostFormatToPostConnectionEdge"
+      },
+      {
+        "name": "PostFormatToPostConnectionPageInfo"
+      },
+      {
+        "name": "PostFormatToTaxonomyConnectionEdge"
+      },
+      {
+        "name": "PostFormatConnectionPageInfo"
+      },
+      {
+        "name": "PostToPostFormatConnectionEdge"
+      },
+      {
+        "name": "PostToPostFormatConnectionPageInfo"
+      },
+      {
+        "name": "PostToPreviewConnectionEdge"
+      },
+      {
+        "name": "PostToRevisionConnectionWhereArgs"
+      },
+      {
+        "name": "PostToRevisionConnection"
+      },
+      {
+        "name": "PostToRevisionConnectionEdge"
+      },
+      {
+        "name": "PostToRevisionConnectionPageInfo"
+      },
+      {
+        "name": "PostToTagConnectionWhereArgs"
+      },
+      {
+        "name": "PostToTagConnection"
+      },
+      {
+        "name": "TagConnection"
+      },
+      {
+        "name": "TagConnectionEdge"
+      },
+      {
+        "name": "Tag"
+      },
+      {
+        "name": "TagToContentNodeConnectionWhereArgs"
+      },
+      {
+        "name": "ContentTypesOfTagEnum"
+      },
+      {
+        "name": "TagToContentNodeConnection"
+      },
+      {
+        "name": "TagToContentNodeConnectionEdge"
+      },
+      {
+        "name": "TagToContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "TagToPostConnectionWhereArgs"
+      },
+      {
+        "name": "TagToPostConnection"
+      },
+      {
+        "name": "TagToPostConnectionEdge"
+      },
+      {
+        "name": "TagToPostConnectionPageInfo"
+      },
+      {
+        "name": "TagToTaxonomyConnectionEdge"
+      },
+      {
+        "name": "TagConnectionPageInfo"
+      },
+      {
+        "name": "PostToTagConnectionEdge"
+      },
+      {
+        "name": "PostToTagConnectionPageInfo"
+      },
+      {
+        "name": "PostToTermNodeConnectionWhereArgs"
+      },
+      {
+        "name": "TaxonomyEnum"
+      },
+      {
+        "name": "PostToTermNodeConnection"
+      },
+      {
+        "name": "PostToTermNodeConnectionEdge"
+      },
+      {
+        "name": "PostToTermNodeConnectionPageInfo"
+      },
+      {
+        "name": "UserToPostConnectionEdge"
+      },
+      {
+        "name": "UserToPostConnectionPageInfo"
+      },
+      {
+        "name": "UserToRevisionsConnectionWhereArgs"
+      },
+      {
+        "name": "UserToRevisionsConnection"
+      },
+      {
+        "name": "UserToRevisionsConnectionEdge"
+      },
+      {
+        "name": "UserToRevisionsConnectionPageInfo"
+      },
+      {
+        "name": "UserToUserRoleConnection"
+      },
+      {
+        "name": "UserRoleConnection"
+      },
+      {
+        "name": "UserRoleConnectionEdge"
+      },
+      {
+        "name": "UserRole"
+      },
+      {
+        "name": "UserRoleConnectionPageInfo"
+      },
+      {
+        "name": "UserToUserRoleConnectionEdge"
+      },
+      {
+        "name": "UserToUserRoleConnectionPageInfo"
+      },
+      {
+        "name": "CategoryToContentNodeConnectionEdge"
+      },
+      {
+        "name": "CategoryToContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "CategoryToParentCategoryConnectionEdge"
+      },
+      {
+        "name": "CategoryToPostConnectionWhereArgs"
+      },
+      {
+        "name": "CategoryToPostConnection"
+      },
+      {
+        "name": "CategoryToPostConnectionEdge"
+      },
+      {
+        "name": "CategoryToPostConnectionPageInfo"
+      },
+      {
+        "name": "CategoryToTaxonomyConnectionEdge"
+      },
+      {
+        "name": "RootQueryToCategoryConnectionEdge"
+      },
+      {
+        "name": "RootQueryToCategoryConnectionPageInfo"
+      },
+      {
+        "name": "CategoryIdType"
+      },
+      {
+        "name": "CommentNodeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToCommentConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToCommentConnection"
+      },
+      {
+        "name": "RootQueryToCommentConnectionEdge"
+      },
+      {
+        "name": "RootQueryToCommentConnectionPageInfo"
+      },
+      {
+        "name": "ContentNodeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToContentNodeConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToContentNodeConnection"
+      },
+      {
+        "name": "RootQueryToContentNodeConnectionEdge"
+      },
+      {
+        "name": "RootQueryToContentNodeConnectionPageInfo"
+      },
+      {
+        "name": "ContentTypeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToContentTypeConnection"
+      },
+      {
+        "name": "RootQueryToContentTypeConnectionEdge"
+      },
+      {
+        "name": "RootQueryToContentTypeConnectionPageInfo"
+      },
+      {
+        "name": "DiscussionSettings"
+      },
+      {
+        "name": "GeneralSettings"
+      },
+      {
+        "name": "MediaItemIdType"
+      },
+      {
+        "name": "RootQueryToMediaItemConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToMediaItemConnection"
+      },
+      {
+        "name": "RootQueryToMediaItemConnectionEdge"
+      },
+      {
+        "name": "RootQueryToMediaItemConnectionPageInfo"
+      },
+      {
+        "name": "MenuNodeIdTypeEnum"
+      },
+      {
+        "name": "Menu"
+      },
+      {
+        "name": "MenuLocationEnum"
+      },
+      {
+        "name": "MenuToMenuItemConnectionWhereArgs"
+      },
+      {
+        "name": "MenuToMenuItemConnection"
+      },
+      {
+        "name": "MenuItemConnection"
+      },
+      {
+        "name": "MenuItemConnectionEdge"
+      },
+      {
+        "name": "MenuItem"
+      },
+      {
+        "name": "MenuItemToMenuItemConnectionWhereArgs"
+      },
+      {
+        "name": "MenuItemToMenuItemConnection"
+      },
+      {
+        "name": "MenuItemToMenuItemConnectionEdge"
+      },
+      {
+        "name": "MenuItemToMenuItemConnectionPageInfo"
+      },
+      {
+        "name": "MenuItemConnectionPageInfo"
+      },
+      {
+        "name": "MenuItemToMenuItemLinkableConnectionEdge"
+      },
+      {
+        "name": "MenuItemLinkableConnectionEdge"
+      },
+      {
+        "name": "MenuItemObjectUnion"
+      },
+      {
+        "name": "MenuItemToMenuConnectionEdge"
+      },
+      {
+        "name": "MenuConnectionEdge"
+      },
+      {
+        "name": "MenuToMenuItemConnectionEdge"
+      },
+      {
+        "name": "MenuToMenuItemConnectionPageInfo"
+      },
+      {
+        "name": "MenuItemNodeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToMenuItemConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToMenuItemConnection"
+      },
+      {
+        "name": "RootQueryToMenuItemConnectionEdge"
+      },
+      {
+        "name": "RootQueryToMenuItemConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToMenuConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToMenuConnection"
+      },
+      {
+        "name": "MenuConnection"
+      },
+      {
+        "name": "MenuConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToMenuConnectionEdge"
+      },
+      {
+        "name": "RootQueryToMenuConnectionPageInfo"
+      },
+      {
+        "name": "ModelIdType"
+      },
+      {
+        "name": "RootQueryToModelConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToModelConnection"
+      },
+      {
+        "name": "RootQueryToModelConnectionEdge"
+      },
+      {
+        "name": "RootQueryToModelConnectionPageInfo"
+      },
+      {
+        "name": "PageIdType"
+      },
+      {
+        "name": "RootQueryToPageConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToPageConnection"
+      },
+      {
+        "name": "RootQueryToPageConnectionEdge"
+      },
+      {
+        "name": "RootQueryToPageConnectionPageInfo"
+      },
+      {
+        "name": "Plugin"
+      },
+      {
+        "name": "RootQueryToPluginConnectionWhereArgs"
+      },
+      {
+        "name": "PluginStatusEnum"
+      },
+      {
+        "name": "RootQueryToPluginConnection"
+      },
+      {
+        "name": "PluginConnection"
+      },
+      {
+        "name": "PluginConnectionEdge"
+      },
+      {
+        "name": "PluginConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToPluginConnectionEdge"
+      },
+      {
+        "name": "RootQueryToPluginConnectionPageInfo"
+      },
+      {
+        "name": "PostIdType"
+      },
+      {
+        "name": "PostFormatIdType"
+      },
+      {
+        "name": "RootQueryToPostFormatConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToPostFormatConnection"
+      },
+      {
+        "name": "RootQueryToPostFormatConnectionEdge"
+      },
+      {
+        "name": "RootQueryToPostFormatConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToPostConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToPostConnection"
+      },
+      {
+        "name": "RootQueryToPostConnectionEdge"
+      },
+      {
+        "name": "RootQueryToPostConnectionPageInfo"
+      },
+      {
+        "name": "ReadingSettings"
+      },
+      {
+        "name": "RootQueryToEnqueuedScriptConnection"
+      },
+      {
+        "name": "RootQueryToEnqueuedScriptConnectionEdge"
+      },
+      {
+        "name": "RootQueryToEnqueuedScriptConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToEnqueuedStylesheetConnection"
+      },
+      {
+        "name": "RootQueryToEnqueuedStylesheetConnectionEdge"
+      },
+      {
+        "name": "RootQueryToEnqueuedStylesheetConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToRevisionsConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToRevisionsConnection"
+      },
+      {
+        "name": "RootQueryToRevisionsConnectionEdge"
+      },
+      {
+        "name": "RootQueryToRevisionsConnectionPageInfo"
+      },
+      {
+        "name": "TagIdType"
+      },
+      {
+        "name": "RootQueryToTagConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToTagConnection"
+      },
+      {
+        "name": "RootQueryToTagConnectionEdge"
+      },
+      {
+        "name": "RootQueryToTagConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToTaxonomyConnection"
+      },
+      {
+        "name": "RootQueryToTaxonomyConnectionEdge"
+      },
+      {
+        "name": "RootQueryToTaxonomyConnectionPageInfo"
+      },
+      {
+        "name": "TaxonomyIdTypeEnum"
+      },
+      {
+        "name": "TermNodeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToTermNodeConnectionWhereArgs"
+      },
+      {
+        "name": "RootQueryToTermNodeConnection"
+      },
+      {
+        "name": "RootQueryToTermNodeConnectionEdge"
+      },
+      {
+        "name": "RootQueryToTermNodeConnectionPageInfo"
+      },
+      {
+        "name": "Theme"
+      },
+      {
+        "name": "RootQueryToThemeConnection"
+      },
+      {
+        "name": "ThemeConnection"
+      },
+      {
+        "name": "ThemeConnectionEdge"
+      },
+      {
+        "name": "ThemeConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToThemeConnectionEdge"
+      },
+      {
+        "name": "RootQueryToThemeConnectionPageInfo"
+      },
+      {
+        "name": "UserNodeIdTypeEnum"
+      },
+      {
+        "name": "RootQueryToUserRoleConnection"
+      },
+      {
+        "name": "RootQueryToUserRoleConnectionEdge"
+      },
+      {
+        "name": "RootQueryToUserRoleConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToUserConnectionWhereArgs"
+      },
+      {
+        "name": "UsersConnectionOrderbyInput"
+      },
+      {
+        "name": "UsersConnectionOrderbyEnum"
+      },
+      {
+        "name": "UserRoleEnum"
+      },
+      {
+        "name": "UsersConnectionSearchColumnEnum"
+      },
+      {
+        "name": "RootQueryToUserConnection"
+      },
+      {
+        "name": "UserConnection"
+      },
+      {
+        "name": "UserConnectionPageInfo"
+      },
+      {
+        "name": "RootQueryToUserConnectionEdge"
+      },
+      {
+        "name": "RootQueryToUserConnectionPageInfo"
+      },
+      {
+        "name": "WritingSettings"
+      },
+      {
+        "name": "RootMutation"
+      },
+      {
+        "name": "CreateCategoryInput"
+      },
+      {
+        "name": "CreateCategoryPayload"
+      },
+      {
+        "name": "CreateCommentInput"
+      },
+      {
+        "name": "CreateCommentPayload"
+      },
+      {
+        "name": "CreateMediaItemInput"
+      },
+      {
+        "name": "MediaItemStatusEnum"
+      },
+      {
+        "name": "CreateMediaItemPayload"
+      },
+      {
+        "name": "CreateModelInput"
+      },
+      {
+        "name": "CreateModelPayload"
+      },
+      {
+        "name": "CreatePageInput"
+      },
+      {
+        "name": "CreatePagePayload"
+      },
+      {
+        "name": "CreatePostInput"
+      },
+      {
+        "name": "PostCategoriesInput"
+      },
+      {
+        "name": "PostCategoriesNodeInput"
+      },
+      {
+        "name": "PostPostFormatsInput"
+      },
+      {
+        "name": "PostPostFormatsNodeInput"
+      },
+      {
+        "name": "PostTagsInput"
+      },
+      {
+        "name": "PostTagsNodeInput"
+      },
+      {
+        "name": "CreatePostPayload"
+      },
+      {
+        "name": "CreatePostFormatInput"
+      },
+      {
+        "name": "CreatePostFormatPayload"
+      },
+      {
+        "name": "CreateTagInput"
+      },
+      {
+        "name": "CreateTagPayload"
+      },
+      {
+        "name": "CreateUserInput"
+      },
+      {
+        "name": "CreateUserPayload"
+      },
+      {
+        "name": "DeleteCategoryInput"
+      },
+      {
+        "name": "DeleteCategoryPayload"
+      },
+      {
+        "name": "DeleteCommentInput"
+      },
+      {
+        "name": "DeleteCommentPayload"
+      },
+      {
+        "name": "DeleteMediaItemInput"
+      },
+      {
+        "name": "DeleteMediaItemPayload"
+      },
+      {
+        "name": "DeleteModelInput"
+      },
+      {
+        "name": "DeleteModelPayload"
+      },
+      {
+        "name": "DeletePageInput"
+      },
+      {
+        "name": "DeletePagePayload"
+      },
+      {
+        "name": "DeletePostInput"
+      },
+      {
+        "name": "DeletePostPayload"
+      },
+      {
+        "name": "DeletePostFormatInput"
+      },
+      {
+        "name": "DeletePostFormatPayload"
+      },
+      {
+        "name": "DeleteTagInput"
+      },
+      {
+        "name": "DeleteTagPayload"
+      },
+      {
+        "name": "DeleteUserInput"
+      },
+      {
+        "name": "DeleteUserPayload"
+      },
+      {
+        "name": "RegisterUserInput"
+      },
+      {
+        "name": "RegisterUserPayload"
+      },
+      {
+        "name": "ResetUserPasswordInput"
+      },
+      {
+        "name": "ResetUserPasswordPayload"
+      },
+      {
+        "name": "RestoreCommentInput"
+      },
+      {
+        "name": "RestoreCommentPayload"
+      },
+      {
+        "name": "SendPasswordResetEmailInput"
+      },
+      {
+        "name": "SendPasswordResetEmailPayload"
+      },
+      {
+        "name": "UpdateCategoryInput"
+      },
+      {
+        "name": "UpdateCategoryPayload"
+      },
+      {
+        "name": "UpdateCommentInput"
+      },
+      {
+        "name": "UpdateCommentPayload"
+      },
+      {
+        "name": "UpdateMediaItemInput"
+      },
+      {
+        "name": "UpdateMediaItemPayload"
+      },
+      {
+        "name": "UpdateModelInput"
+      },
+      {
+        "name": "UpdateModelPayload"
+      },
+      {
+        "name": "UpdatePageInput"
+      },
+      {
+        "name": "UpdatePagePayload"
+      },
+      {
+        "name": "UpdatePostInput"
+      },
+      {
+        "name": "UpdatePostPayload"
+      },
+      {
+        "name": "UpdatePostFormatInput"
+      },
+      {
+        "name": "UpdatePostFormatPayload"
+      },
+      {
+        "name": "UpdateSettingsInput"
+      },
+      {
+        "name": "UpdateSettingsPayload"
+      },
+      {
+        "name": "UpdateTagInput"
+      },
+      {
+        "name": "UpdateTagPayload"
+      },
+      {
+        "name": "UpdateUserInput"
+      },
+      {
+        "name": "UpdateUserPayload"
+      },
+      {
+        "name": "Node"
+      },
+      {
+        "name": "UniformResourceIdentifiable"
+      },
+      {
+        "name": "ContentNode"
+      },
+      {
+        "name": "DatabaseIdentifier"
+      },
+      {
+        "name": "NodeWithTemplate"
+      },
+      {
+        "name": "Previewable"
+      },
+      {
+        "name": "NodeWithTitle"
+      },
+      {
+        "name": "NodeWithContentEditor"
+      },
+      {
+        "name": "NodeWithAuthor"
+      },
+      {
+        "name": "NodeWithFeaturedImage"
+      },
+      {
+        "name": "NodeWithExcerpt"
+      },
+      {
+        "name": "MenuItemLinkable"
+      },
+      {
+        "name": "WithAcfSeo"
+      },
+      {
+        "name": "PostObjectFieldFormatEnum"
+      },
+      {
+        "name": "Model"
+      },
+      {
+        "name": "Edge"
+      },
+      {
+        "name": "OneToOneConnection"
+      },
+      {
+        "name": "UserConnectionEdge"
+      },
+      {
+        "name": "NodeWithAuthorToUserConnectionEdge"
+      },
+      {
+        "name": "ID"
+      },
+      {
+        "name": "ContentTypeConnectionEdge"
+      },
+      {
+        "name": "ContentNodeToContentTypeConnectionEdge"
+      },
+      {
+        "name": "ContentNodeToEditLockConnectionEdge"
+      },
+      {
+        "name": "Connection"
+      },
+      {
+        "name": "EnqueuedScriptConnection"
+      },
+      {
+        "name": "ContentNodeToEnqueuedScriptConnection"
+      },
+      {
+        "name": "EnqueuedStylesheetConnection"
+      },
+      {
+        "name": "ContentNodeToEnqueuedStylesheetConnection"
+      },
+      {
+        "name": "MediaItemConnectionEdge"
+      },
+      {
+        "name": "NodeWithFeaturedImageToMediaItemConnectionEdge"
+      },
+      {
+        "name": "ContentNodeToEditLastConnectionEdge"
+      },
+      {
+        "name": "ModelConnectionEdge"
+      },
+      {
+        "name": "ModelToPreviewConnectionEdge"
+      },
+      {
+        "name": "AcfFieldGroup"
+      },
+      {
+        "name": "AcfFieldGroupFields"
+      },
+      {
+        "name": "Seo_Fields"
+      },
+      {
+        "name": "Seo"
+      },
+      {
+        "name": "ContentTemplate"
+      },
+      {
+        "name": "CommentAuthor"
+      },
+      {
+        "name": "DefaultTemplate"
+      },
+      {
+        "name": "Template_PageNoTitle"
+      },
+      {
+        "name": "Country_Fields"
+      },
+      {
+        "name": "Country"
+      },
+      {
+        "name": "__Schema"
+      },
+      {
+        "name": "__Type"
+      },
+      {
+        "name": "__TypeKind"
+      },
+      {
+        "name": "__Field"
+      },
+      {
+        "name": "__InputValue"
+      },
+      {
+        "name": "__EnumValue"
+      },
+      {
+        "name": "__Directive"
+      },
+      {
+        "name": "__DirectiveLocation"
+      }
+    ]
+  }
+}
