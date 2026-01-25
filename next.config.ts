@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
       {
         // OLD → NEW (BYD Dolphin 2026)
         source: "/models/byd-dolphin-2026-electric-car-review",
-        destination: "/models/byd-dolphin-2026",
+        destination: "/models/byd-dolphin",
         permanent: true, // 301
       },
 
