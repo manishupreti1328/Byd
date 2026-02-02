@@ -59,6 +59,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Models", href: "/models" },
+    { name: "Blogs", href: "/blogs" },
     { name: "Comparisons", href: "/comparisons" },
     { name: "EV Calculator", href: "/ev-charge-cost-calculator" },
     { name: "About", href: "/about" },

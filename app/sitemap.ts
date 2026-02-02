@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { fetchGraphQL } from '@/lib/graphql';
 import { GET_ALL_MODELS } from '@/lib/queries';
 import { GET_ALL_COMPARISONS } from '@/lib/comparisons-queries';
+import { GET_ALL_BLOGS } from '@/lib/blog-queries';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bydcarupdates.com';
@@ -13,6 +14,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Fetch all comparisons
     const comparisonsData = await fetchGraphQL<{ comparisons: { nodes: Array<{ slug: string; modified?: string; date?: string }> } }>(GET_ALL_COMPARISONS);
     const comparisons = comparisonsData?.comparisons?.nodes ?? [];
+
+    // Fetch all blogs
+    // Note: The field name in standard WPGraphQL is typically "posts" for standard posts,
+    // but the user's custom query uses "allBlogs". We align with that custom type.
+    const blogsData = await fetchGraphQL<{ allBlogs: { nodes: Array<{ slug: string; modified?: string; date?: string }> } }>(GET_ALL_BLOGS);
+    const blogs = blogsData?.allBlogs?.nodes ?? [];
 
     // Static pages
     const staticPages: MetadataRoute.Sitemap = [
@@ -30,6 +37,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
         {
             url: `${baseUrl}/comparisons`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/blogs`,
             lastModified: new Date(),
             changeFrequency: 'daily',
             priority: 0.9,
@@ -89,5 +102,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.8,
     }));
 
-    return [...staticPages, ...modelPages, ...comparisonPages];
+    // Dynamic blog pages
+    const blogPages: MetadataRoute.Sitemap = blogs.map((blog) => ({
+        url: `${baseUrl}/blogs/${blog.slug}`,
+        lastModified: blog.modified ? new Date(blog.modified) : (blog.date ? new Date(blog.date) : new Date()),
+        changeFrequency: 'daily' as const, // Blogs might be news, so daily checks could be relevant
+        priority: 0.8,
+    }));
+
+    return [...staticPages, ...modelPages, ...comparisonPages, ...blogPages];
 }
