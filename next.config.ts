@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
       {
         // OLD → NEW (BYD Dolphin 2026)
         source: "/models/byd-dolphin-2026-electric-car-review",
-        destination: "/models/byd-dolphin",
+        destination: "/models/byd-dolp m,hin",
         permanent: true, // 301
       },
 
@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
         destination: "/models/byd-seagull",
         permanent: true, // 301
       },
-
+qw3
           {
         // OLD → NEW (BYD Dolphin 2026)
         source: "/models/denza-n9-price-interior-luxury-electric-suv-range",

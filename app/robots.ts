@@ -9,8 +9,64 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: '*',
                 allow: '/',
-                disallow: ['/api/', '/admin/'],
+                disallow: ['/api/', '/admin/', '/private/'],
             },
+            {
+                userAgent: 'GPTBot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'CCBot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Google-Extended',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Amazonbot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'FacebookBot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Anthropic-AI',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Claude-Web',
+                disallow: '/',
+            },
+            {
+                userAgent: 'cohere-ai',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Omgilibot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Omgili',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Bytespider',
+                disallow: '/',
+            },
+            {
+                userAgent: 'Diffbot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'ImagesiftBot',
+                disallow: '/',
+            },
+            {
+                userAgent: 'PerplexityBot',
+                disallow: '/',
+            }
         ],
         sitemap: `${baseUrl}/sitemap.xml`,
     };
