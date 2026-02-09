@@ -31,19 +31,17 @@ const nextConfig: NextConfig = {
       {
         // OLD → NEW (BYD Dolphin 2026)
         source: "/models/byd-dolphin-2026-electric-car-review",
-        destination: "/models/byd-dolp m,hin",
+        destination: "/models/byd-dolphin",
         permanent: true, // 301
       },
-
       {
-        // OLD → NEW (BYD Dolphin 2026)
+        // OLD → NEW (BYD Seagull)
         source: "/models/byd-seagull-price-range-vs-dolphin",
         destination: "/models/byd-seagull",
         permanent: true, // 301
       },
-qw3
-          {
-        // OLD → NEW (BYD Dolphin 2026)
+      {
+        // OLD → NEW (Denza N9)
         source: "/models/denza-n9-price-interior-luxury-electric-suv-range",
         destination: "/models/denza-n9",
         permanent: true, // 301
