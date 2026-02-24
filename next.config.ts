@@ -22,29 +22,29 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      // {
-      //   // OLD → NEW (Fangchengbao Tai 3)
-      //   source: "/models/fangchengbao-tai-3-byd-offroad-ev-review",
-      //   destination: "/models/fangchengbao-tai-3",
-      //   permanent: true, // 301
-      // },
-      // {
-      //   // OLD → NEW (BYD Dolphin 2026)
-      //   source: "/models/byd-dolphin-2026-electric-car-review",
-      //   destination: "/models/byd-dolphin",
-      //   permanent: true, // 301
-      // },
-      // {
-      //   // OLD → NEW (BYD Seagull)
-      //   source: "/models/byd-seagull-price-range-vs-dolphin",
-      //   destination: "/models/byd-seagull",
-      //   permanent: true, // 301
-      // },
       {
-        // OLD → NEW (Denza N9)
-        source: "/models/denza-n9-price-interior-luxury-electric-suv-range",
-        destination: "/models/denza-n9",
-        permanent: true, // 301
+        // NEW → OLD (Fangchengbao Tai 3)
+        source: "/models/fangchengbao-tai-3",
+        destination: "/models/fangchengbao-tai-3-byd-offroad-ev-review",
+        permanent: true,
+      },
+      {
+        // NEW → OLD (BYD Dolphin 2026)
+        source: "/models/byd-dolphin",
+        destination: "/models/byd-dolphin-2026-electric-car-review",
+        permanent: true,
+      },
+      {
+        // NEW → OLD (BYD Seagull)
+        source: "/models/byd-seagull",
+        destination: "/models/byd-seagull-price-range-vs-dolphin",
+        permanent: true,
+      },
+      {
+        // NEW → OLD (Denza N9)
+        source: "/models/denza-n9",
+        destination: "/models/denza-n9-price-interior-luxury-electric-suv-range",
+        permanent: true,
       },
 
       // ➕ ADD MORE REDIRECTS BELOW
